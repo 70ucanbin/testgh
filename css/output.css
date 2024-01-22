@@ -624,14 +624,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.white-bg-image {
-  background-image: url(../img/3.jpg); background-size: cover;
-}
-    
-.dark .dark\:dark-bg-image {
-  background-image: url(../img/4.jpg); background-size: cover;
-}
-
 .btn {
   transition-property: all;
   transition-duration: 200ms;
