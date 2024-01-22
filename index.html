@@ -52,7 +52,7 @@
 <div class="main" id="main">
     <!-- <div class="relative flex items-center h-screen px-4 lg:px-0 bg-white dark:bg-dark" id="top"> -->
     <!-- Image by <a href="https://www.freepik.com/free-vector/wavy-background_7405159.htm#page=2&query=Neural%20Networks&position=49&from_view=search&track=ais&uuid=d311c93d-7cf6-4f7a-ae67-31700763900a#position=49&page=2&query=Neural%20Networks">Freepik</a> -->
-    <div class="relative flex items-center h-screen px-4 lg:px-0 bg-white dark:bg-dark" style="background-image: url(./img/4.png); background-size: cover;" id="top">
+    <div class="relative flex items-center h-screen px-4 lg:px-0 bg-white white-bg-image dark:bg-dark dark:dark-bg-image" id="top">
         <div class="sticky z-10 w-full lg:w-2/5 2xl:w-1/2 mx-auto text-center mt-20">
             <h1 class="heading text-3xl lg:text-5xl !leading-normal">未来を創造する</h1>
             <h1 class="heading text-3xl lg:text-5xl !leading-normal">テクノロジーの先へ</h1>
@@ -386,11 +386,11 @@
                             </div>
                             <div class="flex flex-col my-4">
                                 <label for="message" class="form-label">お問い合わせ内容</label>
-                                <textarea name="message" id="message" name="entry.1389717228" cols="30" rows="5" class="resize-none form-input"
+                                <textarea id="message" name="entry.1389717228" cols="30" rows="5" class="resize-none form-input"
                                           required></textarea>
                             </div>
                             <div class="mt-4">
-                                <button type="button" class="btn bg-[#4a6cf7] opacity-90 py-3" onclick="sendForm()">送信</button>
+                                <button type="submit" class="btn bg-[#4a6cf7] opacity-90 py-3">送信</button>
                             </div>
                         </form>
                     </div>
@@ -463,15 +463,17 @@
 </div>
 <script src="./js/script.js"></script>
 <script>
-    function sendForm() {
-        const form = document.getElementById("contactForm");
-        const formData = new FormData(form);
-        let xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
-        xhr.open('POST', 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfoid9bpHW2twmhOVugojOdkSFf_X2LGponOo1HQGOcWKn9Kg/formResponse');
-        xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
-        xhr.send(formData);
-    }
+    // function sendForm() {
+    //     const form = document.getElementById("contactForm");
+    //     const formData = {
+    //         ""
+    //     }
+    //     let xhr = new XMLHttpRequest();
+    //     xhr.withCredentials = true;
+    //     xhr.open('POST', 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfoid9bpHW2twmhOVugojOdkSFf_X2LGponOo1HQGOcWKn9Kg/formResponse');
+    //     xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+    //     xhr.send(formData);
+    // }
 </script>
 </body>
 </html>
