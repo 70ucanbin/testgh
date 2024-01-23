@@ -17,3 +17,9 @@ mood.addEventListener("click", function (){
        root.classList.add("dark")
    }
 })
+const send = document.getElementById("send-message");
+const contactForm = document.getElementById("contactForm");
+send.addEventListener("click", function (){
+    contactForm.submit();
+    alert("問い合わせありがとうございました。")
+})
