@@ -20,6 +20,9 @@ mood.addEventListener("click", function (){
 const send = document.getElementById("send-message");
 const contactForm = document.getElementById("contactForm");
 send.addEventListener("click", function (){
-    contactForm.submit();
-    alert("問い合わせありがとうございました。")
+    if ( contactForm.elements['name'].value && contactForm.elements['email'].value && contactForm.elements['message'].value
+    ) {
+        contactForm.submit();
+        alert("問い合わせありがとうございました。")
+    }
 })
